@@ -242,7 +242,7 @@ footer {
   -webkit-font-smoothing: subpixel-antialiased;
 }
 
-/* ===== Portfolio Cards ===== */
+/* ===== Portfolio Cards with Consistent Heights ===== */
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -257,6 +257,9 @@ footer {
   padding: 16px;
   box-shadow: var(--shadow);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  min-height: 420px;
 }
 
 .project-card:hover {
@@ -266,19 +269,26 @@ footer {
 
 .project-card h3 {
   margin: 0 0 8px;
+  min-height: 48px;
 }
 
 .project-meta {
   font-size: 13px;
   color: #6a7671;
   margin-bottom: 10px;
+  line-height: 1.4;
+}
+
+.project-card > p {
+  flex-grow: 1;
+  margin-bottom: 12px;
 }
 
 .project-links {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
-  margin-top: 10px;
+  margin-top: auto;
 }
 
 .pill {
@@ -302,12 +312,173 @@ footer {
   text-decoration: none;
 }
 
+/* ===== Image Gallery System ===== */
+.image-gallery {
+  position: relative;
+  margin: 12px 0;
+}
+
 .project-img {
-  margin-top: 12px;
   width: 100%;
   height: auto;
   border-radius: 14px;
   border: 1px solid rgba(0, 0, 0, 0.06);
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+.gallery-trigger:hover {
+  opacity: 0.85;
+}
+
+/* Lightbox Modal */
+.lightbox {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.95);
+  align-items: center;
+  justify-content: center;
+}
+
+.lightbox.active {
+  display: flex;
+}
+
+.lightbox-content {
+  position: relative;
+  max-width: 90%;
+  max-height: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lightbox-content img {
+  max-width: 100%;
+  max-height: 90vh;
+  border-radius: 8px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+}
+
+.lightbox-close {
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  font-size: 40px;
+  color: white;
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.5);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10000;
+}
+
+.lightbox-close:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.lightbox-prev,
+.lightbox-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 40px;
+  color: white;
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.5);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+}
+
+.lightbox-prev:hover,
+.lightbox-next:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.lightbox-prev {
+  left: 40px;
+}
+
+.lightbox-next {
+  right: 40px;
+}
+
+.lightbox-counter {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  font-size: 16px;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 8px 16px;
+  border-radius: 20px;
+}
+
+/* ===== Coming Soon Card ===== */
+.coming-soon {
+  background: linear-gradient(135deg, var(--green2) 0%, var(--pink2) 100%);
+  border: 2px dashed var(--green);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: 420px;
+}
+
+.coming-soon h3 {
+  font-size: 24px;
+  margin-bottom: 12px;
+}
+
+.coming-soon p {
+  font-size: 14px;
+  color: var(--muted);
+  max-width: 80%;
+}
+
+/* ===== Status Pills ===== */
+.pill.status-private {
+  background: linear-gradient(90deg, #e8e8e8, #f5f5f5);
+  cursor: default;
+  color: #666;
+}
+
+.pill.status-nda {
+  background: linear-gradient(90deg, var(--green2), #e8f5e9);
+  cursor: pointer;
+}
+
+.pill.status-award {
+  background: linear-gradient(90deg, #fff4e6, #ffe8cc);
+  color: #d97706;
+  font-weight: 700;
+}
+
+.pill.status-code {
+  background: linear-gradient(90deg, #e0e7ff, #dbeafe);
+  cursor: pointer;
+}
+
+.pill.status-private:hover {
+  transform: none;
+  box-shadow: none;
+  text-decoration: none;
 }
 
 /* ===== Responsive Design ===== */
@@ -347,6 +518,10 @@ footer {
   .projects-grid {
     grid-template-columns: 1fr;
   }
+
+  .project-card {
+    min-height: auto;
+  }
 }
 
 @media print, screen and (max-width: 720px) {
@@ -364,6 +539,18 @@ footer {
 
   pre, code {
     word-wrap: normal;
+  }
+
+  .lightbox-prev {
+    left: 10px;
+  }
+
+  .lightbox-next {
+    right: 10px;
+  }
+
+  .lightbox-close {
+    right: 10px;
   }
 }
 
@@ -387,39 +574,8 @@ footer {
     font-size: 12pt;
     color: #444;
   }
-}
-/* Add these styles to the bottom of your styles.css file */
 
-/* ===== Status Pills (for NDA/Private projects) ===== */
-.pill.status-private {
-  background: linear-gradient(90deg, #e8e8e8, #f5f5f5);
-  cursor: default;
-  color: #666;
-}
-
-.pill.status-nda {
-  background: linear-gradient(90deg, var(--green2), #e8f5e9);
-  cursor: pointer;
-}
-
-.pill.status-demo {
-  background: linear-gradient(90deg, var(--pink2), #fce4ec);
-}
-
-.pill.status-award {
-  background: linear-gradient(90deg, #fff4e6, #ffe8cc);
-  color: #d97706;
-  font-weight: 700;
-}
-
-.pill.status-code {
-  background: linear-gradient(90deg, #e0e7ff, #dbeafe);
-  cursor: pointer;
-}
-
-/* Prevent hover effects on status-only pills */
-.pill.status-private:hover {
-  transform: none;
-  box-shadow: none;
-  text-decoration: none;
+  .lightbox {
+    display: none !important;
+  }
 }
