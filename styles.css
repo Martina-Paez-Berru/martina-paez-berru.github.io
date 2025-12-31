@@ -21,11 +21,16 @@
 body {
   background: radial-gradient(900px 500px at 12% 8%, var(--green2) 0%, rgba(0,0,0,0) 60%),
               radial-gradient(900px 500px at 88% 10%, var(--pink2) 0%, rgba(0,0,0,0) 60%),
+              radial-gradient(900px 500px at 12% 50%, var(--green2) 0%, rgba(0,0,0,0) 60%),
+              radial-gradient(900px 500px at 88% 55%, var(--pink2) 0%, rgba(0,0,0,0) 60%),
+              radial-gradient(900px 500px at 12% 90%, var(--green2) 0%, rgba(0,0,0,0) 60%),
+              radial-gradient(900px 500px at 88% 95%, var(--pink2) 0%, rgba(0,0,0,0) 60%),
               var(--bg);
   padding: 46px;
   font: 15px/1.7 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
   color: var(--muted);
   font-weight: 400;
+  min-height: 100vh;
 }
 
 /* ===== Typography ===== */
