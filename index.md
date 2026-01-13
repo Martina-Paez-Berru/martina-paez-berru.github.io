@@ -22,7 +22,7 @@ Curious by nature and driven by continuous learning, I am seeking Applied AI / M
   </div>
   <div class="project-links">
     <span class="pill status-award">🏆 Competition Winner</span>
-    <a href="assets/1768265937524_Robbin_-_Central_Park_Team_pptx.pdf" target="_blank" class="pill">📊 Presentation</a>
+    <a href="assets/Robbin - Central Park Team.pptx.pdf" target="_blank" class="pill">📊 Presentation</a>
     <span class="pill status-private">🔒 Private Repository</span>
   </div>
 </div>
@@ -79,7 +79,7 @@ Curious by nature and driven by continuous learning, I am seeking Applied AI / M
     <img src="assets/img/framework_architecture_scoremachine_gan.png" alt="Architecture diagram" class="project-img gallery-trigger" data-gallery="gan" style="display:none;">
   </div>
   <div class="project-links">
-    <a href="assets/1768265947190_Conference_Poster_Fall_2025_GANS_pptx.pdf" target="_blank" class="pill">📊 Research Poster</a>
+    <a href="assets/Conference Poster Fall 2025 GANS.pptx.pdf" target="_blank" class="pill">📊 Research Poster</a>
     <span class="pill status-nda">📄 Thesis (NDA - Ask2.ai)</span>
   </div>
 </div>
