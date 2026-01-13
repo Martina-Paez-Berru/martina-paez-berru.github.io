@@ -22,7 +22,7 @@ Curious by nature and driven by continuous learning, I am seeking Applied AI / M
   </div>
   <div class="project-links">
     <span class="pill status-award">🏆 Competition Winner</span>
-    <a href="assets/AWS_Bedrock_Presentation.pptx" download class="pill">📊 Presentation</a>
+    <a href="assets/1768265937524_Robbin_-_Central_Park_Team_pptx.pdf" target="_blank" class="pill">📊 Presentation</a>
     <span class="pill status-private">🔒 Private Repository</span>
   </div>
 </div>
@@ -79,7 +79,7 @@ Curious by nature and driven by continuous learning, I am seeking Applied AI / M
     <img src="assets/img/framework_architecture_scoremachine_gan.png" alt="Architecture diagram" class="project-img gallery-trigger" data-gallery="gan" style="display:none;">
   </div>
   <div class="project-links">
-    <a href="assets/Conference_Poster_Fall_2025_GANS.pptx" download class="pill">📊 Research Poster</a>
+    <a href="assets/1768265947190_Conference_Poster_Fall_2025_GANS_pptx.pdf" target="_blank" class="pill">📊 Research Poster</a>
     <span class="pill status-nda">📄 Thesis (NDA - Ask2.ai)</span>
   </div>
 </div>
@@ -174,25 +174,25 @@ React, FastAPI, Playwright, Scrapy, Google APIs
 <div class="project-card">
   <h3>Deep Venture Partners</h3>
   <p class="project-meta">Data Engineer | Jun - Aug 2025</p>
-  <p>Built full-stack AI automation for VC tech scouting with multi-agent workflows, real-time GPT-4 inference, and automated presentation generation across 25+ universities.</p>
+  <p>Built full-stack AI system to automate VC tech scouting; orchestrated multi-agent workflows with real-time GPT-4 inference, FastAPI microservices, and Google Slides API, sourcing academic research via Scrapy + Playwright. Engineered end-to-end pipeline consolidating LLM outputs with Google Slides API to define success metrics for template selection, experiment with presentation strategies, and optimize content clarity. Designed and deployed normalized PostgreSQL schema for 25+ institutions, enabling scalable exploratory analysis, root cause identification, and actionable insights across university research data.</p>
 </div>
 
 <div class="project-card">
   <h3>Columbia Engineering | Quantitative Research Lab (MathWorks)</h3>
-  <p class="project-meta">Project Manager & Data Scientist | Jun - Aug 2025</p>
-  <p>Led AI-powered investment ideation platform with Neo4j-ChromaDB graph database. Presented findings with Professor Robbins at MathWorks Research Summit. Reduced research time by >100 hours/month.</p>
+  <p class="project-meta">Project Manager & Data Scientist | Jun - Oct 2025</p>
+  <p>Led and collaborated with cross-functional team to develop an AI-powered investment ideation system, reducing research time by over 100 hours/month, defining success metrics to evaluate pipeline accuracy. Architected modular ingestion-to-retrieval pipeline (3.41 GB) of financial research using LightRAG stack; deployed Sentence Transformers, LangChain, and ChromaDB for semantic search to optimize product-relevant retrieval strategies. Engineered Neo4j–ChromaDB graph database unifying 5,000+ academic papers and 20,000+ posts; evaluated feature strategies, quantified retrieval improvements, and generated actionable insights for research backtesting.</p>
 </div>
 
 <div class="project-card">
   <h3>Ardian</h3>
-  <p class="project-meta">Data Scientist | Jan - May 2025</p>
-  <p>Developed 30-year electricity forecasting system using Databricks, RNN, and XGBoost on 1.5TB+ European market data.</p>
+  <p class="project-meta">Data Scientist - Capstone Project | Jan - May 2025</p>
+  <p>Preprocessed and extracted insights from 1.5TB+ of European electricity market data spanning 10+ years and 20+ variables; partnered with experts and team on exploratory data analysis and time series feature engineering for price behavior modeling. Built an end-to-end Databricks pipeline for 30-year electricity-price forecasting, training RNN and XGBoost ensembles; reduced error by 21%, quantified impact of modeling strategies and informed long-term planning decisions.</p>
 </div>
 
 <div class="project-card">
   <h3>Ask2.ai</h3>
   <p class="project-meta">Data Scientist – Deep Learning Capstone Project | Sep - Dec 2025</p>
-  <p>Designed score-regularized bivariate Transformer-GAN to simulate private-equity cash-flow dynamics under extreme data scarcity (19 funds) using dual Wasserstein discriminators, hard-negative regularization, and nine domain-specific loss constraints to preserve J-curve shape; achieved accurate valley timing (Q13–19), high utility (0.958), and privacy (Wasserstein 0.059).</p>
+  <p>Designed score-regularized bivariate Transformer-GAN to simulate private-equity cash-flow dynamics under extreme data scarcity (19 funds) using dual Wasserstein discriminators, hard-negative regularization, and nine domain-specific loss constraints to preserve J-curve shape. Achieved accurate valley timing (Q13–19), high utility (0.958), and privacy (Wasserstein 0.059). Developed novel GAN architecture under Prof. Ali Hirsa with dual discriminators and hard negative training via frozen classifier ("Score Machine"), implementing three-phase curriculum learning to stabilize training and match realistic J-curve dynamics.</p>
 </div>
 
 <div class="project-card">
@@ -204,7 +204,7 @@ React, FastAPI, Playwright, Scrapy, Google APIs
 <div class="project-card">
   <h3>Stratyfy</h3>
   <p class="project-meta">Digital Marketing Freelancer | Jan - Mar 2025</p>
-  <p>Designed A/B testing strategy with causal inference, reducing CPC by 18% and achieving 2.10% CTR.</p>
+  <p>Designed and executed A/B testing strategy (ethical vs. functional framing), applying experimentation methodology and causal inference to reduce CPC by 18%. Conducted full-funnel analysis with statistical modeling, defined ROI metrics, quantified ad performance impact, and provided actionable insights to improve channel effectiveness. Boosted campaign effectiveness (65+ clicks, 2.10% CTR) enhancing decision-making aligning data insights with strategic goals.</p>
 </div>
 
 <div class="project-card coming-soon">
