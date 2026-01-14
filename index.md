@@ -1,10 +1,10 @@
 # Portfolio
 
-I am an applied data scientist and AI engineer from Quito, Ecuador, fascinated by how advanced models become real systems that shape economies, infrastructure, and everyday decisions.
+I am an applied data scientist and AI engineer originally from Quito, Ecuador, fascinated by how advanced models become real systems that shape economies, infrastructure, and everyday decisions. I studied Mathematics and Economics at École Polytechnique and recently completed my Master’s in Business Analytics at Columbia University, where I focused on building scalable machine learning and generative AI systems for real-world decision making.
 
 I have build production-grade AI systems that go from enterprise RAG pipelines and agentic workflows to large-scale forecasting engines, and that turn complex data into real operational and business impact. I care deeply about building models that are not only accurate, but auditable, scalable, and responsibly deployed, especially in areas like energy, sustainability, finance, and infrastructure where technology directly affects people's lives.
 
-Curious by nature and driven by continuous learning, I am seeking Applied AI / ML Engineering and Quantitative Research roles in fintech, infrastructure analytics, and enterprise AI: across diverse industries where advanced models meet real people, real capital, and real-world consequences.
+Curious by nature and driven by continuous learning, I am seeking applied AI / ML engineering and research-oriented roles where I can build hands-on, real-world systems. I am especially interested in generative models, forecasting, digital twins, and experimental AI pipelines in technology-driven environments where models directly shape real people, real resources, and real-world outcomes.
 
 ---
 
